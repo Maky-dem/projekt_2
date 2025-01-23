@@ -8,12 +8,6 @@ email: demura.m@seznam.cz
 import random
 import time
 
-pozdrav = "Hi there!"
-informace_1 = "I've generated a random 4 digit number for you."
-informace_2 = "Let's play bulls and cows game."
-oddelovač = "-" * len(informace_1)
-
-
 
 def generujeme_cislo():
     cislo = random.sample(range(1, 10), 4)
@@ -49,6 +43,10 @@ def analyza_typu(typ, hadane_cislo):
 
   
 def hra_bezi():
+    pozdrav = "Hi there!"
+    informace_1 = "I've generated a random 4 digit number for you."
+    informace_2 = "Let's play bulls and cows game."
+    oddelovač = "-" * len(informace_1)
     print(pozdrav, oddelovač, informace_1, informace_2, oddelovač, sep="\n")
     print("Enter a number:", oddelovač, sep="\n")
     
